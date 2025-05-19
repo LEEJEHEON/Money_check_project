@@ -1,0 +1,20 @@
+database:
+  name: money_check
+  user: innoquartz
+  password: innoquartz
+  host: localhost
+  port: 5432
+
+django:
+  debug: true
+  allowed_hosts:
+    - localhost
+    - 127.0.0.1
+  cors_origins:
+    - http://localhost:3000
+    - http://127.0.0.1:3000
+
+paths:
+  venv: venv
+  requirements: requirements.txt
+  backend: backend 
