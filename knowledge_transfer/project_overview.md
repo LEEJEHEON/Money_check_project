@@ -7,7 +7,6 @@ Money_check_project/
 ├── backend/            # Django 백엔드
 ├── transactions/       # 거래 관련 앱
 ├── accounts/          # 계정 관리 앱
-├── venv/              # Python 가상환경
 └── manage.py          # Django 프로젝트 관리
 ```
 

@@ -2,21 +2,14 @@
 
 ## 1. 백엔드 설정
 
-### Python 가상환경 설정
+### Python 패키지 설치
 ```bash
-# 가상환경 생성
-python -m venv venv
-
-# 가상환경 활성화
-# Windows
-venv\Scripts\activate
-# Linux/Mac
-source venv/bin/activate
-```
-
-### 의존성 설치
-```bash
-pip install -r requirements.txt
+# 필요한 패키지 직접 설치
+pip install django==4.2.7
+pip install djangorestframework==3.14.0
+pip install psycopg2-binary==2.9.9
+pip install python-dotenv==1.0.0
+pip install django-cors-headers==4.3.0
 ```
 
 ### 데이터베이스 설정
@@ -58,7 +51,6 @@ npm install -D @types/react-router-dom
 
 ### 백엔드 서버
 ```bash
-# 가상환경 활성화 후
 python manage.py runserver
 ```
 

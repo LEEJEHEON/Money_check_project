@@ -30,11 +30,8 @@ python init_project.py
 # .env 파일 설정
 # .env 파일을 열어서 DB_PASSWORD 등 필요한 정보를 수정해주세요
 
-# 가상환경 활성화
-# Windows:
-.\\venv\\Scripts\\activate
-# Mac/Linux:
-source venv/bin/activate
+# 필요한 패키지 설치
+pip install -r requirements.txt
 
 # 데이터베이스 마이그레이션
 python manage.py migrate
