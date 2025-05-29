@@ -49,7 +49,6 @@ INSTALLED_APPS = [
     
     # Local apps
     'accounts',
-    'transactions',
 ]
 
 MIDDLEWARE = [
@@ -147,6 +146,21 @@ CORS_ALLOWED_ORIGINS = [
     "http://127.0.0.1:5173",
 ]
 CORS_ALLOW_CREDENTIALS = True
+
+# 세션 설정
+SESSION_COOKIE_SAMESITE = 'Lax'
+SESSION_COOKIE_SECURE = False  # 개발 환경에서는 False
+SESSION_COOKIE_HTTPONLY = False  # JavaScript에서 접근 가능하도록
+SESSION_COOKIE_AGE = 86400  # 24시간
+SESSION_SAVE_EVERY_REQUEST = True
+
+# CSRF 설정
+CSRF_COOKIE_SAMESITE = 'Lax'
+CSRF_COOKIE_SECURE = False  # 개발 환경에서는 False
+CSRF_TRUSTED_ORIGINS = [
+    "http://localhost:5173",
+    "http://127.0.0.1:5173",
+]
 
 # REST Framework settings
 REST_FRAMEWORK = {
